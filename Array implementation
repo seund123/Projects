@@ -1,0 +1,49 @@
+#CREATING A 5X5 ARRAY USING C AND MANIPULATING IT TO SWAP ROWS AND COLUMNS
+ovid subtlty and depth of psychological understanding
+apollo and daphne, daphne no want she dey run she con turn to tree
+
+
+
+int main() {
+   int row, col, j ;
+   int ident[5][5];
+   int *myptr, *temp, *row0,*row4;
+   myptr = &(ident[0][0]);
+   for (row=0; row<5; row ++){
+       for ( col=0;  col<5; col ++){
+           if(row== col){
+               *myptr=1;
+            }
+            else {
+                *myptr=0;
+            }
+            myptr++;
+       }
+   }
+   row0=&(ident[0][0]);
+   row4=&(ident[4][0]);
+   temp= row0;
+   row0=row4;
+   row4=temp;
+
+    myptr = row0;
+        for(j=0;j<4;j++) {
+            printf(" %d", *myptr);
+            myptr++;
+
+       }
+       printf("\n");
+    }
+ 
+myptr = &(ident[0][0]);
+   for (row=0; row<5; row ++){
+       for ( col=0;  col<5; col ++){
+           if(row== col){
+               *myptr=1;
+            }
+            else {
+                *myptr=0;
+            }
+            myptr++;
+       }
+   }
